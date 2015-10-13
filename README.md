@@ -33,4 +33,4 @@
      - Place the Simage download into the /src/simage/ directory under the main CalVR roll folder.
    
    * [Collada-Dom 2.2](http://sourceforge.net/projects/collada-dom/files/Collada%20DOM/Collada%20DOM%202.2/Collada%20DOM%202.2.zip/download): Collada is another required library that CalVR needs when building.
-     -Rename the collda download to Collada-2.2.zip and place it in /src/collada under the main CalVR roll folder. 
+     - Rename the collda download to Collada-2.2.zip and place it in /src/collada under the main CalVR roll folder. 
