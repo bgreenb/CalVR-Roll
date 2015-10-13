@@ -13,7 +13,8 @@
 
  * You will need several dependencies before being able to build the roll:
   
-   * [Tiff 4.0.4](ftp://ftp.remotesensing.org/pub/libtiff/tiff-4.0.4.zip): Tiff 4 (an image compression format) has some things that are required for building CalVR
+   * [Tiff 4.0.4]ftp://ftp.remotesensing.org/pub/libtiff/): Tiff 4 (an image compression format) has some things that are required for building CalVR
+     - Download the tiff-4.0.4.zip file on the page.
      - Place this downloaded file in the /src/tiff4.0.4 directory under the main CalVR roll folder.
 
    * [MiniXml 2.6](http://www.msweet.org/files/project3/mxml-2.6.tar.gz): MiniXml version 2.6 (or mxml for short) is a required part of CalVR to read the xml based configuration files.
