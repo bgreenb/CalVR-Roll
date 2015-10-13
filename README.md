@@ -13,7 +13,7 @@
 
  * You will need several dependencies before being able to build the roll:
   
-   * [Tiff 4.0.4]ftp://ftp.remotesensing.org/pub/libtiff/): Tiff 4 (an image compression format) has some things that are required for building CalVR
+   * [Tiff 4.0.4](ftp://ftp.remotesensing.org/pub/libtiff/): Tiff 4 (an image compression format) has some things that are required for building CalVR
      - Download the tiff-4.0.4.zip file on the page.
      - Place this downloaded file in the /src/tiff4.0.4 directory under the main CalVR roll folder.
 
