@@ -34,35 +34,36 @@
    
    * [Collada-Dom 2.2](http://sourceforge.net/projects/collada-dom/files/Collada%20DOM/Collada%20DOM%202.2/Collada%20DOM%202.2.zip/download): Collada is another required library that CalVR needs when building.
      - Rename the collada download to Collada-2.2.zip and place it in /src/collada under the main CalVR roll folder. 
+
 ###Building
- 
+
  * Now that the dependencies are present we can now start building the roll:
 
    * In the main CalVR roll directory type:
-	> 'make 2>&1 | tee build.log'
+	```make 2>&1 | tee build.log```
    * This will take some time as CalVR is built into a .iso file with all its dependencies.
 
 ###Installation
 
- *After the .iso roll file is built we will then add it into rocks. On the command line in the CalVR roll directory type:
+ * After the .iso roll file is built we will then add it into rocks. On the command line in the CalVR roll directory type:
+```
+  rocks add roll *.iso
+  rocks enable roll CalVR
+  cd /export/rocks/install
+  rocks create distro ```
 
-  > 'rocks add roll *.iso'
-  > 'rocks enable roll CalVR'
-  > 'cd /export/rocks/install'
-  > 'rocks create distro'
+ * Then on a Rocks frontend node go to a directory of your choosing outside of /export/rocks/install and type:
 
- *Then on a Rocks frontend node go to a directory of your choosing outside of /export/rocks/install and type:
+  > ```rocks run roll CalVR > add-roll-CalVR.sh```
 
-  > 'rocks run roll CalVR > add-roll-CalVR.sh'
+ * Then on a login node execute the resulting .sh file:
 
- *Then on a login node execute the resulting .sh file:
-
-  > 'bash add-roll-CalVR.sh 2>&1 | tee add-roll-CalVR.out'
+    ```bash add-roll-CalVR.sh 2>&1 | tee add-roll-CalVR.out```
 
  *Lastly on tile nodes with GPUs that are going to be used for display output:
 
-  > 'rocks set host boot tile-X-Y action=install'
-  > 'rocks set host tile-X-Y reboot'
+   ```rocks set host boot tile-X-Y action=install
+      rocks set host tile-X-Y reboot```
   
 
 
