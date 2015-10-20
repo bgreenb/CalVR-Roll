@@ -66,7 +66,7 @@
      bash add-roll-CalVR.sh 2>&1 | tee add-roll-CalVR.out
      ```
 
- *Lastly on tile nodes with GPUs that are going to be used for display output:
+ * Lastly on tile nodes with GPUs that are going to be used for display output:
 
      ```
      rocks set host boot tile-X-Y action=install
